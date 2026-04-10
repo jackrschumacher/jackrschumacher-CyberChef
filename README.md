@@ -13,6 +13,7 @@ First, download the source code and compile the production version of the applic
 ```bash
 git clone [https://github.com/gchq/CyberChef.git](https://github.com/gchq/CyberChef.git)
 cd CyberChef
+nvm install #Get reccomended node version from the current directory
 npm install
 npx grunt prod
 cd ..
