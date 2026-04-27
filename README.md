@@ -1,6 +1,6 @@
 # jackrschumacher-CyberChef
 
-[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/jackrschumacher-CyberChef)](https://github.com/jackrschumacher/jackrschumacher-CyberChef/releases) 
+[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/jackrschumacher-CyberChef)](https://github.com/jackrschumacher/jackrschumacher-CyberChef/releases) [![npm](https://img.shields.io/npm/v/cyberchef.svg)](https://www.npmjs.com/package/cyberchef)
 
 ## CyberChef Local Build
 
@@ -10,7 +10,7 @@ This guide outlines the steps to compile [GCHQ's CyberChef](https://github.com/g
 * Node.js and npm installed locally.
 * Git installed locally.
 
-## 1. Clone and Build Locally
+## Clone and Build Locally
 First, download the source code and compile the production version of the application. 
 
 ```bash
@@ -22,3 +22,7 @@ npx grunt prod
 cd ..
 ```
 This build does generate a `.zip` file, but by adding that to the `.gitignore` prevents it from being pushed to the remote.
+
+## Issues
+
+If you encounter issues with CyberChef, report it [here](https://github.com/gchq/CyberChef/issues).
