@@ -1,4 +1,7 @@
 # jackrschumacher-CyberChef
+
+[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/jackrschumacher-CyberChef)](https://github.com/jackrschumacher/jackrschumacher-CyberChef/releases) 
+
 ## CyberChef Local Build
 
 This guide outlines the steps to compile [GCHQ's CyberChef](https://github.com/gchq/CyberChef) on your local machine
