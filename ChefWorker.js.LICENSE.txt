@@ -81,6 +81,12 @@
  **/
 
 /**
+ * @author 0xff1ce [github.com/0xff1ce]
+ * @copyright Crown Copyright 2024
+ * @license Apache-2.0
+ */
+
+/**
  * @author Dachande663 [dachande663@gmail.com]
  * @copyright Crown Copyright 2018
  * @license Apache-2.0
@@ -874,4 +880,4 @@
 
 //! moment.js locale configuration
 
-//! version : 0.6.1
+//! version : 0.6.2
