@@ -2,13 +2,11 @@
 
 # Define the paths to your CyberChef directories
 CYBERCHEF_SRC_DIR="../CyberChef"
-# Note: 'grunt prod' typically outputs to a 'prod' subfolder inside 'build'. 
-# If it fails to copy, change this to: "../CyberChef/build/prod"
 CYBERCHEF_BUILD_PATH="../CyberChef/build/prod"
 
-# 1. Build CyberChef
+# 1. Update and Build CyberChef
 if [ -d "$CYBERCHEF_SRC_DIR" ]; then
-    echo "Navigating to $CYBERCHEF_SRC_DIR to build CyberChef..."
+    echo "Navigating to $CYBERCHEF_SRC_DIR to update and build CyberChef..."
     
     # Save the current directory path so we can return here later
     ORIGINAL_DIR=$(pwd)
@@ -16,13 +14,22 @@ if [ -d "$CYBERCHEF_SRC_DIR" ]; then
     # Navigate to the CyberChef folder
     cd "$CYBERCHEF_SRC_DIR" || { echo "Failed to enter $CYBERCHEF_SRC_DIR"; exit 1; }
     
+    # Fetch and pull the latest changes
+    echo "Pulling latest changes from Git..."
+    git fetch || { echo "Git fetch failed. Please check your connection or permissions."; exit 1; }
+    git pull || { echo "Git pull failed. You may have merge conflicts to resolve."; exit 1; }
+    
     echo "Building CyberChef using npm..."
     
-    # Source nvm if it's not available in non-interactive scripts 
-    # (Uncomment the line below if you get an 'nvm: command not found' error)
+    export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     
-    nvm install
+    nvm install 20
+    nvm use 20
+    
+    # Remove old node_modules to prevent conflicts after a pull
+    rm -rf node_modules
+    
     npm install
     npx grunt prod
     
@@ -34,11 +41,11 @@ else
     exit 1
 fi
 
-# 2. Delete everything in the current directory except .gitignore, README.md, and this script
+# 2. Delete everything in the current directory except .git, .gitignore, README.md, and this script
 echo "Cleaning current directory..."
 find . -mindepth 1 -maxdepth 1 \
-  ! -name '.gitignore' \
   ! -name '.git' \
+  ! -name '.gitignore' \
   ! -name 'README.md' \
   ! -name "$(basename "$0")" \
   -exec rm -rf {} +
@@ -51,12 +58,11 @@ if [ -d "$CYBERCHEF_BUILD_PATH" ]; then
     # Copy all standard files and directories
     cp -r "$CYBERCHEF_BUILD_PATH"/* ./
     
-    # Copy hidden files (if any exist in the build folder), suppressing errors if there are none
+    # Copy hidden files, suppressing errors if there are none
     cp -r "$CYBERCHEF_BUILD_PATH"/.[!.]* ./ 2>/dev/null || true
     
     echo "Update complete! The build files have been copied."
 else
     echo "Error: Directory '$CYBERCHEF_BUILD_PATH' does not exist."
-    echo "Please check if 'grunt prod' outputted to a 'prod' subfolder."
     exit 1
 fi

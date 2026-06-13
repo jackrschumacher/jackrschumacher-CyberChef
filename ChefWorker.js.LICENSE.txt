@@ -138,6 +138,12 @@
  */
 
 /**
+ * @author HarelKatz [github.com/HarelKatz]
+ * @copyright Crown Copyright 2026
+ * @license Apache-2.0
+ */
+
+/**
  * @author Jarmo van Lenthe [github.com/jarmovanlenthe]
  * @copyright Jarmo van Lenthe
  * @license Apache-2.0
@@ -152,6 +158,12 @@
 /**
  * @author Klaxon [klaxon@veyr.com]
  * @copyright Crown Copyright 2018
+ * @license Apache-2.0
+ */
+
+/**
+ * @author Louis-Ladd [lewisharshman1@gmail.com]
+ * @copyright Crown Copyright 2025
  * @license Apache-2.0
  */
 
@@ -815,6 +827,12 @@
  *
  * @author Medjedtxm
  * @copyright Crown Copyright 2025
+ * @license Apache-2.0
+ */
+
+/**
+ * ROR13 Hash operation (Windows API hashing convention)
+ * @author fufu_btw
  * @license Apache-2.0
  */
 
