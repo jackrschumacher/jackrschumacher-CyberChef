@@ -148,6 +148,12 @@
  */
 
 /**
+ * @author Imantas Lukenskas [imantas@lukenskas.dev]
+ * @copyright Imantas Lukenskas 2026
+ * @license Apache-2.0
+ */
+
+/**
  * @author Jarmo van Lenthe [github.com/jarmovanlenthe]
  * @copyright Jarmo van Lenthe
  * @license Apache-2.0

@@ -203,6 +203,12 @@
  */
 
 /**
+ * @author p-leriche [philip.leriche@cantab.net]
+ * @copyright Crown Copyright 2025
+ * @license Apache-2.0
+ */
+
+/**
  * @author r4mos [2k95ljkhg@mozmail.com]
  * @copyright Crown Copyright 2025
  * @license Apache-2.0
