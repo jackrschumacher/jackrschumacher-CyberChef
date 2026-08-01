@@ -587,6 +587,10 @@
  */
 
 /**
+ * @license Apache-2.0
+ */
+
+/**
  * Base32 resources.
  *
  * @author Peter C-S [petercs@purelymail.com]
