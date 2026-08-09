@@ -15,6 +15,8 @@
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
+/*! js-yaml 5.2.3 https://github.com/nodeca/js-yaml @license MIT */
+
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */
 
 /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
@@ -810,18 +812,6 @@
  * @author gchq77703 []
  * @author n1474335 [n1474335@gmail.com]
  * @copyright Crown Copyright 2018
- * @license Apache-2.0
- */
-
-/**
- * Protobuf lib. Contains functions to decode protobuf serialised
- * data without a schema or .proto file.
- *
- * Provides utility functions to encode and decode variable length
- * integers (varint).
- *
- * @author GCHQ Contributor [3]
- * @copyright Crown Copyright 2019
  * @license Apache-2.0
  */
 
