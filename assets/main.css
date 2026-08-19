@@ -12762,6 +12762,7 @@ h6 {
  */
 
 /* Themes */
+
 /**
  * Classic theme definitions
  *
@@ -12897,6 +12898,7 @@ h6 {
     --input-highlight-colour: #1976d2;
     --input-border-colour: #424242;
 }
+
 /**
  * Dark theme definitions
  *
@@ -13028,6 +13030,7 @@ h6 {
     --input-highlight-colour: #1976d2;
     --input-border-colour: #424242;
 }
+
 /**
  * GeoCities theme definitions
  *
@@ -13159,6 +13162,7 @@ h6 {
     --input-highlight-colour: limegreen;
     --input-border-colour: limegreen;
 }
+
 /**
  * Solarized dark theme definitions
  *
@@ -13307,6 +13311,7 @@ h6 {
     --input-highlight-colour: var(--base1);
     --input-border-colour: var(--base0);
 }
+
 /**
  * Solarized light theme definitions
  *
@@ -13459,6 +13464,7 @@ h6 {
 }
 
 /* Utilities */
+
 /**
  * Overrides for vendor styles
  *
@@ -13883,6 +13889,7 @@ optgroup {
 .cm-specialChar {
     color: red;
 }
+
 /**
  * General styles
  *
@@ -13991,7 +13998,6 @@ body {
 .hl3 { background-color: #ffb6b6aa; background-color: var(--hl3); } /* Half-Life 3 confirmed :O */
 .hl4 { background-color: #fcf8e3aa; background-color: var(--hl4); }
 .hl5 { background-color: #8de768aa; background-color: var(--hl5); }
-
 /* Preloader styles */
 /**
  * Preloader styles
@@ -14161,6 +14167,7 @@ body {
 }
 
 /* Components */
+
 /**
  * Button styles
  *
@@ -14174,6 +14181,7 @@ span.btn img {
     margin-right: 3px;
     margin-bottom: 1px;
 }
+
 /**
  * Operation list styles
  *
@@ -14234,6 +14242,7 @@ span.btn img {
     opacity: 0.5;
     padding-left: .5em;
 }
+
 /**
  * Operation styles
  *
@@ -14708,6 +14717,7 @@ input.toggle-string {
     background-color: #cdcdcd !important;
     background-color: var(--disabled-border-colour) !important;
 }
+
 /**
  * Workspace pane styles
  *
@@ -14769,6 +14779,7 @@ input.toggle-string {
 }
 
 /* Layout */
+
 /**
  * Banner area styles
  *
@@ -14837,6 +14848,7 @@ input.toggle-string {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 /**
  * Controls area styles
  *
@@ -14917,6 +14929,7 @@ input.toggle-string {
     0%      {transform: rotate(0deg);}
     100%    {transform: rotate(360deg);}
 }
+
 /**
  * Input/Output area styles
  *
@@ -15724,6 +15737,7 @@ input.toggle-string {
 .file-details-thumbnail {
     max-width: 180px;
 }
+
 /**
  * Modal layout styles
  *
@@ -15899,6 +15913,8 @@ p a:focus {
         linear-gradient(to top, var(--input-highlight-colour) 2px, rgba(0, 0, 0, 0) 2px),
         linear-gradient(to top, var(--primary-border-colour) 1px, rgba(0, 0, 0, 0) 1px);
 }
+
+
 /**
  * Operation area styles
  *
@@ -15953,6 +15969,7 @@ p a:focus {
     -webkit-filter: brightness(98%);
             filter: brightness(98%);
 }
+
 /**
  * Recipe area styles
  *
@@ -15973,6 +15990,7 @@ p a:focus {
     border-color: #d3e8c0;
     border-color: var(--rec-list-operation-border-colour);
 }
+
 /**
  * Overall page structure styles
  *
@@ -16047,6 +16065,7 @@ div#output {
 }
 
 /* Operations */
+
 del {
     background-color: #ffb6b6aa;
     background-color: var(--hl3);
@@ -16057,6 +16076,7 @@ ins {
     background-color: #8de768aa;
     background-color: var(--hl5);
 }
+
 /**
  * JSON styles
  *
