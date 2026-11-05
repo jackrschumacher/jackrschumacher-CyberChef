@@ -261,4 +261,4 @@
 
 //! moment.js locale configuration
 
-//! version : 0.6.4
+//! version : 0.6.6
